@@ -12,6 +12,7 @@ public class AnimalDriver {
 		ArrayList<Animal> myAnimals = new ArrayList<Animal>();
 		myAnimals.add(a);
 		myAnimals.add(b);
+		myAnimals.add(c);
 		
 		System.out.println("Using a for-loop");
 		for(Animal x : myAnimals) {
