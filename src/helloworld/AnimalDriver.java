@@ -7,6 +7,7 @@ public class AnimalDriver {
 	public static void main(String[] args) {
 		Animal a = new Cow(2, "Muuuuh");
 		Animal b = new Dog(10, "Wuff");
+		Animal c = new Bird(3, "Zzzzz");
 		
 		ArrayList<Animal> myAnimals = new ArrayList<Animal>();
 		myAnimals.add(a);
