@@ -1,6 +1,10 @@
 package helloworld;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class AnimalDriver {
 
@@ -25,6 +29,22 @@ public class AnimalDriver {
 		myAnimals.forEach(l -> {
 			l.printAge();
 			l.speak();
+		});
+		
+		
+		System.out.println();
+		System.out.println("*************************");
+		System.out.println("Using a stream");
+		List<Animal> as = myAnimals.stream().filter(z -> {
+			if(z.getAge()==2) {
+				return true;
+			}else{
+				return false;
+			}
+		}).collect(Collectors.toList());
+		as.forEach(x -> {
+			x.printAge();
+			x.speak();
 		});
 		
 	}

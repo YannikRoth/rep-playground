@@ -16,5 +16,9 @@ public abstract class Animal {
 		System.out.println("I'm an animal");
 	}
 	
+	public int getAge() {
+		return this.age;
+	}
+	
 	public abstract void speak();
 }
