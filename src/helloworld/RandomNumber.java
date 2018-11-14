@@ -1,9 +1,17 @@
 package helloworld;
 
+import java.util.Random;
+
 public class RandomNumber {
 
 	private int rnd;
+	
 	public RandomNumber() {
-		this.rnd =1;
+		Random rnd = new Random();
+		this.rnd = Math.abs(rnd.nextInt());
+	}
+	
+	public int getNumber() {
+		return this.rnd;
 	}
 }
