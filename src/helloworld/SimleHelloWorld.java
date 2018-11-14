@@ -12,6 +12,9 @@ public class SimleHelloWorld {
 		String value = scan.nextLine();
 		
 		System.out.println("Hello " + value);
+		
+		RandomNumber r = new RandomNumber();
+		System.out.println(r.getNumber());
 
 	}
 
