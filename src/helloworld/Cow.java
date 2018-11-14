@@ -12,4 +12,8 @@ public class Cow extends Animal{
 	public void speak() {
 		System.out.println("Speaking..." + voice);
 	}
+	
+	public void presentCow() {
+		System.out.println("Hello I'm the cow");
+	}
 }
